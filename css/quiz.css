@@ -1,0 +1,161 @@
+.button {
+  margin-top: 15px;
+  text-align:center;
+}
+button{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px 20px 20px 20px / 30px 30px 30px 30px;
+  margin-top:40px;
+  height: 60px;
+  width:430px;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  /* border-radius: 4px; */
+  color: #ffffff;
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+button:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  /* border-top: none;
+  border-right: none;
+  border-left: none; */
+  border-bottom: none;
+}
+button.ichi{
+  margin-top :10px;
+}
+  #seikai {
+    color:red;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 70px;
+    padding-right:70px;
+  }
+  #huseikai{
+    color:blue;
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 70px;
+    padding-right:70px;
+  }
+.score {
+  /* font-size:42px;
+  text-align:center; */
+  font-size:52px;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: transparent;
+	background: linear-gradient(0deg, #3a6e8c 0%, #367998 55%, #5ea6c7 70%, #367998 80%, #3a6e8c 90% 100%); 
+	-webkit-background-clip: text;
+}
+.mondai{
+  font-size:38px;
+  margin-top:15px;
+  padding-top:10px;
+  margin-left:16%;
+  padding-bottom: 1px;
+  width :auto;
+  height:auto;
+}
+#contents p.kmondai{
+  font-size: 36px;
+ padding:0%;
+}
+.mondai .m2{
+  color:rgba(64, 107, 248, 0.886);
+}
+p.kaitou {
+  font-size:22px;
+}
+.kai {
+  color:rgb(255, 36, 131)
+}
+/* .mondai .m1{
+  color:rgba(248, 64, 64, 0.886);
+} */
+/*アコーディオン全体*/
+.accordion-area{
+    list-style: none;
+    width: 96%;
+    max-width: 700px;
+    margin:0 auto;
+}
+
+.accordion-area li{
+    margin: 30px 0;
+}
+
+.accordion-area section {
+	border: 3px solid rgba(0, 0, 0, 0.6);
+  border-radius: 3px 3px 3px 3px / 3px 3px 3px 3px;
+}
+
+/*アコーディオンタイトル*/
+.title {
+    position: relative;/*+マークの位置基準とするためrelative指定*/
+    cursor: pointer;
+    font-size:1rem;
+    font-weight: normal;
+    padding: 3% 3% 3% 50px;
+    transition: all .5s ease;
+}
+
+/*アイコンの＋と×*/
+.title::before,
+.title::after{
+    position: absolute;
+    content:'';
+    width: 15px;
+    height: 2px;
+    background-color: #333;
+    
+}
+.title::before{
+    top:48%;
+    left: 15px;
+    transform: rotate(0deg);
+    
+}
+.title::after{    
+    top:48%;
+    left: 15px;
+    transform: rotate(90deg);
+
+}
+
+/*　closeというクラスがついたら形状変化　*/
+
+.title.close::before{
+	transform: rotate(45deg);
+}
+
+.title.close::after{
+	transform: rotate(-45deg);
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+    display: none;/*はじめは非表示*/
+    border-radius:5px 5px 5px 5px / 6px 6px 6px 6px;
+    background: #579e7d;
+	margin:0 3% 3% 3%;
+    padding: 3%;
+}
+.modoru{
+  font-size:24px;
+  text-decoration: none;
+}
+div.all{
+  width:1024px;
+  margin-left: auto; 
+  margin-right: auto;
+}
